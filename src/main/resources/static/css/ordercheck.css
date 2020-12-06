@@ -1,0 +1,41 @@
+/*! CSS Used from: https://www.justone.co.kr/shopimages/jojean/template/work/1147/common.css?r=1579487180 */
+h2,ul,li,th,td{margin:0;padding:0;font-family:'Malgun Gothic', Lato, monospace, Corbel, Dotum, AppleGothic, Helvetica, sans-serif;}
+h2,table,a{font-size:12px;line-height:1.25;color:#333;font-family:'Malgun Gothic', Lato, monospace, Corbel, Dotum, AppleGothic, Helvetica, sans-serif;}
+h2{font-weight:normal;}
+li{list-style:none;}
+caption{display:none;}
+a{color:#333;text-decoration:none;}
+a{vertical-align:middle;}
+table{width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;word-wrap:break-word;word-break:keep-all;}
+.tb-bold{font-weight:bold;}
+.tb-left,.tb-center{padding:0 10px;}
+.tb-left{text-align:left;}
+.tb-center{text-align:center;}
+#contentWrap-myOrder{position:relative;width:1366px;margin:0 auto;}
+#contentWrap-myOrder:after{content:"";display:block;clear:both;}
+#content-{width:100%;position:relative;}
+.paginate{text-align:center;padding-top:20px;}
+.paginate a.btn_last{font-family:Dotum;letter-spacing:-4px;font-weight:bold;font-size:13px;}
+.paginate a.btn_first{font-family:Dotum;letter-spacing:-4px;font-weight:bold;font-size:13px;}
+.paginate a{width:32px;height:32px;line-height:32px;border:1px solid #e0e0e0;font-size:12px;color:#656565;display:inline-block;}
+.paginate a:hover,.paginate a.now{color:#fff;background-color:#000;border:1px solid #000;}
+.table-d2-list thead th{padding:14px 0;background-color:#fcfcfc;color:#666;border-top:1px solid #bbb;border-bottom:1px solid #e9e9e9;font-size:12px;font-weight:normal;}
+.table-d2-list tbody td{padding:12px 0;border-bottom:1px solid #e9e9e9;}
+#content-myOrder .tit-page{position:relative;padding:40px 0;font-size:30px;text-align:center;color:#000;font-weight:bold;}
+.CSSbutton{display:inline-block;padding:8px 12px;font-size:12px;color:#333;border:1px solid #e0e0e0;background:#fff;-webkit-transition:all 0.3s ease;transition:all 0.3s ease;}
+.CSSbutton:hover{border:1px solid #333;cursor:hand;}
+.CSSbutton:active{position:relative;}
+.CSSbuttonGray{display:inline-block;padding:8px 12px;font-size:12px;color:#fff;border:1px solid #909090;background:#a1a1a1;-webkit-transition:all 0.3s ease;transition:all 0.3s ease;}
+.CSSbuttonGray:hover{color:#333;border:1px solid #333;background:#fff;cursor:hand;}
+.CSSbuttonGray:active{position:relative;}
+/*! CSS Used from: https://www.justone.co.kr/shopimages/jojean/template/work/1147/mp_order.css?t=202001201126 */
+#myOrder .table-d2-list{margin-top:10px;}
+#myOrder .foot-dsc{margin-top:20px;}
+#myOrder .foot-dsc li{padding-bottom:5px;padding-left:10px;background:url(https://www.justone.co.kr/images/d3/modern_simple/common/bull_h3_sqr_gray.gif) no-repeat 0 5px;}
+/*! CSS Used from: https://www.justone.co.kr/shopimages/jojean/template/work/1147/menu.2.css?t=202001201126 */
+.mypage_menu{margin:0 auto 40px; border:1px solid #ddd; width: 604px;}
+.mypage_menu ul {padding-left: 0;}
+.mypage_menu ul:after{display:block;clear:both;content:'';}
+.mypage_menu ul li{margin-left:-1px;float:left;width:151px;height:48px;border-left:1px solid #ddd;}
+.mypage_menu ul li a{display:block;font-size:14px;color:#666;line-height:48px;text-align:center;}
+.mypage_menu ul li a:hover{color:#111;font-weight:bold;}

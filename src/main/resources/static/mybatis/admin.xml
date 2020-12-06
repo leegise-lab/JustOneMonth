@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.justonemonth.model.AdminDAO">
+    <select id="setOrderList" resultType="com.justonemonth.model.SetOrderListDTO">
+        SELECT pay_date, order_id, product_name, pay_price, delivery_finish, pay_finish, order_num FROM tb_order ORDER BY pay_date DESC;
+    </select>
+    <select id="setBuyItemInfo" parameterType="String" resultType="com.justonemonth.model.SetBuyInfoDTO">
+        SELECT cart_amount, cart_productprice, cart_productname, cart_productimg, cart_color, cart_size, cart_ordernum
+        FROM tb_cart WHERE cart_ordernum = #{cartOrderNum};
+    </select>
+    <select id="searchOrderList" resultType="com.justonemonth.model.SetOrderListDTO" parameterType="com.justonemonth.model.SearchDTO">
+        SELECT pay_date, order_id, product_name, pay_price, delivery_finish, pay_finish, order_num FROM tb_order
+        <where>
+            <if test='delivery != null and !"".equals("")'>
+                delivery_finish = ${delivery}
+            </if>
+            <if test='search != null and !"".equals(search)'>
+                <choose>
+                    <when test="searchCategory == '상품명'">
+                        and product_name like concat('%', #{search}, '%')
+                    </when>
+                    <when test="searchCategory == '주문 번호'">
+                        and order_num like concat('%', #{search}, '%')
+                    </when>
+                    <when test="searchCategory == '구매자 ID'">
+                        and order_id like concat('%', #{search}, '%')
+                    </when>
+                    <otherwise>
+                        and order_name like concat('%', #{search}, '%')
+                    </otherwise>
+                </choose>
+            </if>
+            <choose>
+                <when test="startDate != null and startDate != '' and endDate != null and endDate != ''">
+                    and pay_date BETWEEN date_format(#{startDate}, "%Y-%m-%d") AND date_format(#{endDate}, "%Y-%m-%d")
+                </when>
+                <when test="startDate != null and startDate != ''">
+                    and date_format(pay_date, "%Y-%m-%d") >= date_format(#{startDate}, "%Y-%m-%d")
+                </when>
+                <when test="endDate != null and endDate != ''">
+                    and date_format(pay_date, "%Y-%m-%d") <![CDATA[<=]]> date_format(#{endDate}, "%Y-%m-%d")
+                </when>
+            </choose>
+        </where>
+        ORDER BY pay_date DESC
+        limit ${start}, ${pagePerCnt};
+    </select>
+    <delete id="delOrderInfo" parameterType="String">
+        DELETE o, c FROM tb_order o INNER JOIN tb_cart c ON o.order_num = c.cart_ordernum
+where o.order_num = #{orderNum};
+    </delete>
+    <update id="updatePayFinish" parameterType="String">
+        UPDATE tb_order SET pay_finish = 1 WHERE order_num = #{orderNum}
+    </update>
+    <update id="updateDeliveryFinish" parameterType="String">
+        UPDATE tb_order SET delivery_finish = 1 WHERE order_num = #{orderNum}
+    </update>
+    <select id="getListCnt" resultType="int">
+        SELECT COUNT('pay_finish') from tb_order;
+    </select>
+    <select id="getSearchCnt" resultType="int" parameterType="com.justonemonth.model.SearchDTO">
+        SELECT COUNT('pay_finish') FROM tb_order
+        <where>
+            <if test='delivery != null and !"".equals("")'>
+                delivery_finish = ${delivery}
+            </if>
+            <if test='search != null and !"".equals(search)'>
+                <choose>
+                    <when test="searchCategory == '상품명'">
+                        and product_name like concat('%', #{search}, '%')
+                    </when>
+                    <when test="searchCategory == '주문 번호'">
+                        and order_num like concat('%', #{search}, '%')
+                    </when>
+                    <when test="searchCategory == '구매자 ID'">
+                        and order_id like concat('%', #{search}, '%')
+                    </when>
+                    <otherwise>
+                        and order_name like concat('%', #{search}, '%')
+                    </otherwise>
+                </choose>
+            </if>
+            <choose>
+                <when test="startDate != null and startDate != '' and endDate != null and endDate != ''">
+                    and pay_date BETWEEN date_format(#{startDate}, "%Y-%m-%d") AND date_format(#{endDate}, "%Y-%m-%d")
+                </when>
+                <when test="startDate != null and startDate != ''">
+                    and date_format(pay_date, "%Y-%m-%d") >= date_format(#{startDate}, "%Y-%m-%d")
+                </when>
+                <when test="endDate != null and endDate != ''">
+                    and date_format(pay_date, "%Y-%m-%d") <![CDATA[<=]]> date_format(#{endDate}, "%Y-%m-%d")
+                </when>
+            </choose>
+        </where>
+        ORDER BY pay_date DESC
+    </select>
+</mapper>

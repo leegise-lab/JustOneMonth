@@ -1,0 +1,79 @@
+
+#Shortcuts{
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+.Shortcuts_btn{
+    border: 1px solid #e6e5e5;
+    border-radius: 10px;
+    margin-top: 70px;
+    box-sizing: border-box;
+    margin-left: 15px;
+}
+#Shortcuts:first-child{
+    margin-left: 0;
+}
+
+.Shortcuts_btn{
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+.on {
+    background-color: #999;
+    color: #fff;
+}
+.Shortcuts_btn:hover{
+    background-color: #eaeaea;
+}
+#top_menu{
+    width: 100%;
+    text-align: center;
+    margin-top:70px ;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    height: auto;
+}
+.bestbox_line .bestbox_list img{
+    width: 100%;
+    height: 408px;
+}
+.bestbox_top20 {
+    width: 100%;
+    margin: 0px auto;
+    max-width: 1584px;
+    min-width: 1366px;
+    overflow: hidden;
+    
+}
+.bestbox_line .bestbox_list {
+    float: left;
+    width: 25%;
+    padding: 0px 10px 60px;
+    box-sizing: border-box;
+}
+.explan li{
+    display: block;
+    margin-top: 10px;
+}
+.explan li:nth-child(3){
+    margin-top: 20px;
+}
+.explan li:nth-child(1){
+    margin-top: 30px;
+}
+.tem_name{
+     font-size: 14px;
+     color: #666;
+ }
+.tem_size{
+    color: #ed1c24 !important;
+}
+.tem_price{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}

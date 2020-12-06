@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.justonemonth.model.ShDAO">
+    <!-- 회원 리스트 -->
+    <select id="selectMemberTotcnt" resultType="map" parameterType="map">
+        SELECT count(mem_idx) as totcnt from tb_member
+        <choose>
+            <when test="search != null">
+                WHERE (mem_idx LIKE CONCAT("%",#{search},"%") or mem_userid LIKE CONCAT("%",#{search},"%") or
+                mem_name LIKE CONCAT("%",#{search},"%") or mem_email LIKE CONCAT("%",#{search},"%")) and
+                (mem_regdate between date(#{search_start}) and date(#{search_end})+1)
+            </when>
+        </choose>
+    </select>
+
+    <select id="selectMemberWithPaging" resultType="com.justonemonth.model.MemberShDTO" parameterType="map">
+        SELECT mem_idx, mem_userid, mem_pass, mem_name, mem_birth,
+        mem_gender, mem_email, mem_hp, mem_zipcode, mem_address1,
+        mem_address2, mem_regdate from tb_member
+        <choose>
+            <when test="search != null">
+                WHERE (mem_idx LIKE CONCAT("%",#{search},"%") or mem_userid LIKE CONCAT("%",#{search},"%") or
+                mem_name LIKE CONCAT("%",#{search},"%") or mem_email LIKE CONCAT("%",#{search},"%")) and
+                (mem_regdate between date(#{search_start}) and date(#{search_end})+1)
+            </when>
+        </choose>
+        limit ${start},${pagePerCount}
+    </select>
+
+
+    <delete id="deleteMember" parameterType="int">
+        DELETE from tb_member where mem_idx = #{idx}
+    </delete>
+
+
+
+    <!-- 상품 리스트 -->
+
+    <select id="selectProductTotcnt" resultType="map" parameterType="map">
+        SELECT count(up_idx) as totcnt from item_list
+        <choose>
+            <when test="search != null">
+                WHERE (up_name LIKE CONCAT("%",#{search},"%")) and
+                (up_date between date(#{search_start}) and date(#{search_end})+1)
+            </when>
+        </choose>
+    </select>
+
+    <select id="selectProductWithPaging" resultType="com.justonemonth.model.mainDTO" parameterType="map">
+        SELECT * from item_list
+        <choose>
+            <when test="search != null">
+                WHERE (up_name LIKE CONCAT("%",#{search},"%")) and
+                (up_date between date(#{search_start}) and date(#{search_end})+1)
+            </when>
+        </choose>
+        limit ${start},${pagePerCount}
+    </select>
+
+    <delete id="deleteProduct" parameterType="int">
+        DELETE from item_list  where up_idx = #{idx}
+    </delete>
+</mapper>

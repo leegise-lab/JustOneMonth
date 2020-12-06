@@ -1,0 +1,43 @@
+/* BASIC css start */
+#footer { position:relative; width:100%; min-width:1366px; line-height:1.5;}
+#footer .footerTop { margin:0 auto; padding:20px 0; max-width:1584px; min-width:1366px; *zoom:1 }
+#footer .footerTop:after { display:block; clear:both; content:'' }
+#footer .footerTop ul { float:left; border-right:1px solid #eee ; }
+#footer .footerTop ul.wrap1 { padding-left: 104px; height: 290px; width:249px }
+#footer .footerTop ul.wrap2 { padding:0 0;height: 290px; width:194px }
+#footer .footerTop ul.wrap3 { height: 290px; width:284px }
+#footer .footerTop ul.wrap4 { padding-left:70px; width:540px; border-right:0 }
+#footer .footerTop .tit { margin-top:7px; font-size:13px; font-weight:bold }
+#footer .footerTop .line { display:block; margin:15px 0; width:15px; height:1px; background:#999 }
+#footer .footerTop .wrap3 { text-align:center }
+#footer .footerTop .wrap3 .line { margin:19px auto }
+#footer .footerTop .num { margin-bottom:12px; font-size:30px; color:#000}
+#footer .footerTop .sub { font-size:12px; font-weight:normal;    line-height: 22px; }
+#footer .footerTop .sub_cj { font-size:12px; font-weight:bold }
+#footer .footerTop .btn img { margin:10px 0 0 }
+#footer .footerTop .wrap4 .sub { font-weight:normal; font-size:12px; color:#666; line-height: 22px }
+#footer .footerTop .wrap4 .footerSns { padding-top:20px; font-size:0 }
+#footer .footerTop .wrap4 .footerSns a { display:inline-block; margin-right:15px; width:25px; height:25px; text-indent:-9999em; background:url(/design/jojean/phps/common/sp_ft_share.png) 0 0 no-repeat }
+#footer .footerTop .wrap4 .footerSns a.ic_ks { background-position:0 0 }
+#footer .footerTop .wrap4 .footerSns a.ic_fb { background-position:0 -25px }
+#footer .footerTop .wrap4 .footerSns a.ic_in { background-position:0 -50px }
+#footer .footerTop .wrap4 .footerSns a.ic_as { background-position:0 -75px }
+#footer .footerTop .wrap4 .footerSns a.ic_gs { background-position:0 -100px }
+#footer .footerTop .fax { margin-bottom:10px; font-size:13px; font-weight:bold }
+#footer .footerTop .board_li a { display:block; margin-bottom:22px; font-size:12px; color:#333; letter-spacing:1px }
+#footer .footerTop .board_li.color a { display: block; font-size:13px; font-weight:bold; color:#a5613d }
+#footer .footerTop .wrap2 li img { vertical-align: middle }
+#footer .footerTop .wrap2 li.name { margin:4px 0 23px; font-size:11px }
+#footer .footerMiddle { height:42px; text-align:center; border-top:1px solid #eee; border-bottom:1px solid #eee }
+#footer .footerMiddle li { display: inline-block; *display: inline; padding: 0 70px; line-height:42px }
+#footer .footerBottom { margin:0 auto; padding-bottom:60px; width:1366px; text-align:center; }
+#footer .footerBottom ul { margin:17px 0 }
+#footer .footerBottom li { display:inline-block; *display: inline; *zoom:1 }
+#footer .footerBottom li img { vertical-align: middle }
+/* BASIC css end */
+
+#footer .footerTop ul.wrap2 {
+    padding: 0 70px;
+    height: 290px;
+    width: 194px;
+}

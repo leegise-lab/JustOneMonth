@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.justonemonth.model.BoardDAO">
+    <!--    글 목록 확인   -->
+    <select id="boardList" resultType="com.justonemonth.model.BoardTotCntDTO" parameterType="map">
+        SELECT idx, category, title, created_at, answer_yn FROM tb_board where user_id = #{userid} order by idx desc limit ${start}, ${pagePerCnt};
+    </select>
+    <!--    관리자 공지 내용 불러오기  -->
+    <select id="boardNotice" resultType="com.justonemonth.model.BoardDTO">
+        SELECT category, title FROM tb_board where user_id = 'admin'
+    </select>
+    <!--    관지라 공지 게시판 글 확인  -->
+    <select id="boardText" resultType="String" parameterType="String">
+        SELECT contents FROM tb_board where title = #{title}
+    </select>
+    <!--    사용자 게시판 글 등록  -->
+    <insert id="inputBoard" parameterType="map">
+        insert into tb_board (user_id, category, email, title, contents, hp, answer_yn)
+        values (#{userid}, #{category}, #{email}, #{title}, #{contents}, #{hp}, 'N')
+    </insert>
+    <!--    사용자 게시판 글 확인 watch -->
+    <select id="boardWatch" resultType="com.justonemonth.model.BoardWatchDTO" parameterType="int">
+        SELECT title, email, hp, contents, file_path FROM tb_board
+        where idx = #{idx}
+    </select>
+
+    <!--    <select id="boardPager" resultType="com.justonemonth.model.BoardDTO" parameterType="map">-->
+    <!--	select idx, user_id, category, email, title, contents, created_at, answer_yn, file_path, file_name, hp-->
+    <!--	from tb_board order by idx limit #{pagenum}, #{contentnum}-->
+    <!--    </select>-->
+
+    <select id="boardTotalCount" resultType="int" parameterType="String">
+	select count(idx) as totalCount from tb_board where user_id = #{userid}
+    </select>
+
+    <select id="boardTotalCountADMIN" resultType="int">
+	select count(idx) as totalCount from tb_board
+    </select>
+
+    <select id="boardListADMIN" resultType="com.justonemonth.model.BoardTotCntDTO" parameterType="map">
+        SELECT idx, category, title, created_at, answer_yn FROM tb_board order by idx desc limit ${start}, ${pagePerCnt};
+    </select>
+
+</mapper>

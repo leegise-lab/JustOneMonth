@@ -1,0 +1,164 @@
+body, h1, h2, h3, h4, h5, h6, table, input, textarea, a {
+    font-family: 'Malgun Gothic', Lato, monospace, Corbel, Dotum, AppleGothic, Helvetica, sans-serif;
+    line-height: 1.25;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.tb_center{
+    text-align: center;
+}
+
+.cssButtonCorrect{
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 12px;
+    color: #fff;
+    border: 1px solid #333;
+    background: #333;
+    transition: all 0.3s ease;
+    margin-left:4px;
+}
+.cssButtonGray{
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 12px;
+    color: #fff;
+    border: 1px solid #909090;
+    background: #a1a1a1;
+    transition: all 0.3s ease;
+}
+.cssButtonGray:hover{
+    color: #333;
+    border: 1px solid #333;
+    background: #fff;
+}
+.cssButtonBlack{
+    display: inline-block;
+    padding: 12px 45px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #333;
+    background: #333;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.cssButtonBlack:hover{
+    color: #333;
+    border: 1px solid #333;
+    background: #fff;
+}
+
+.cssButtonWhite{
+    display: inline-block;
+    padding: 12px 45px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.cssButtonWhite:hover{
+    border: 1px solid #333;
+}
+
+.tit-page{
+    position: relative;
+    padding: 40px 0;
+    font-size: 30px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+.btnControl_1{
+    display: block;
+}
+
+.btnControl_2{
+    text-align: center;
+}
+
+.delivery{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.deliveryFree{text-align: center;}
+.deliveryFree p{
+    padding: 5px 0 20px 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+.deliveryFree p span{
+    color: #f40000;
+}
+#cartWrap {
+    display: block;
+    min-height: 440px;
+    position: relative;
+    width: 1366px;
+    margin: 0 auto;
+}
+
+
+/*! CSS Used from: http://www.justone.co.kr/shopimages/jojean/template/work/1147/common.css?r=1579487180 */
+dl,dt,dd,ul,li,th,td,p,form,input{margin:0;padding:0;font-family:'Malgun Gothic', Lato, monospace, Corbel, Dotum, AppleGothic, Helvetica, sans-serif;}
+table,input,a{font-size:12px;line-height:1.25;color:#333;font-family:'Malgun Gothic', Lato, monospace, Corbel, Dotum, AppleGothic, Helvetica, sans-serif;}
+img{vertical-align:top;}
+img{border:0 none;}
+li{list-style:none;}
+caption{display:none;}
+a{color:#333;text-decoration:none;}
+input,a{vertical-align:middle;}
+input{border:1px solid #e0e0e0;}
+input[type=checkbox]{border:0;}
+input:focus{outline:none;}
+table{width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;word-wrap:break-word;word-break:keep-all;}
+.d-block{display:block;}
+.MK-product-icons img{vertical-align:middle;margin:0 1px;height:12px;}
+table img{vertical-align:middle;}
+.tb-bold{font-weight:bold;}
+.tb-left,.tb-center,.tb-right{padding:0 10px;}
+.tb-left{text-align:left;}
+.tb-center{text-align:center;}
+.tb-right{text-align:right;}
+.tablecart{margin:10px 0;}
+.tablecart thead th{padding:14px 0;font-size:13px;color:#333;font-weight:bold;border-top:1px solid #bbb;border-bottom:1px solid #e9e9e9;background-color:#fcfcfc;}
+.tablecart thead th .tb-center,.table-cart tbody td .tb-center{padding:0;}
+.tablecart tbody td{padding:18px 0;border-bottom:1px solid #e9e9e9;}
+.tablecart tbody td .cartDel{font-size:16px;}
+.tablecart tbody td .tb-opt{padding-bottom:5px;color:#999; padding-left: 62px;}
+.tablecart tbody td .thumb{width:70px;height:70px;margin-left:auto;margin-right:auto;font-size:0;line-height:0;}
+.tablecart tbody td .thumb a,.table-cart tbody td .thumb img{display:block;width:70px;height:70px;}
+.tablecart tbody td .thumb a{font-size:0;line-height:0;}
+.tablecart tbody td .d-block{padding-bottom:3px;}
+.tablecart tbody tr.nbg td{background-image:none;}
+.tablecart tfoot td{padding:16px 0 20px;font-size:13px;color:#999;border-bottom:1px solid #e9e9e9;background:#fcfcfc;}
+.tablecart tfoot strong{font-size:24px;color:#000;margin-left:3px;}
+.tablecart .optspin{font-size:0;}
+.tablecart .optspin .btn-dw{display:inline-block;width:33px;height:32px;font-size:12px;color:#666;line-height:33px;text-align:center;border:1px solid #ddd;}
+.tablecart .optspin .btn-up{display:inline-block;width:33px;height:32px;font-size:12px;color:#666;line-height:33px;text-align:center;border:1px solid #ddd;}
+.tablecart .optspin .txt-spin{width:33px;height:32px;text-align:center;border:none;border-top:1px solid #ddd;border-bottom:1px solid #ddd;}
+/*! CSS Used from: http://www.justone.co.kr/shopimages/jojean/template/work/1147/basket.css?t=202005081215 */
+#cartWrap .btn-order-ctrl2{margin-top:50px;text-align:center;}
+#cartWrap .cart-ft2{margin-top:20px;text-align:center;}
+
+.deliveryFree p{padding:5px 0 20px 0;font-size:13px;font-weight:bold;}
+.deliveryFree p span{color:#f40000;}
+
+.MS_tb_delivery .MS_layer_delivery{display:block;position:absolute;right:-221px;top:0px;border:3px solid #747474;cursor:default;background:#fff;}
+.MS_tb_delivery .MS_layer_delivery iframe.MS_layer_delivery_iframe{left:-3px;top:-3px;width:192px;height:100px;position:absolute;filter:alpha(opacity=0);opacity:0;z-index:-1;}
+.MS_tb_delivery .MS_layer_delivery ol{padding:10px;width:180px;text-align:left;border:3px solid #eee;}
+.MS_tb_delivery .MS_layer_delivery ol li{margin-top:5px;}
+/*! CSS Used from: http://www.justone.co.kr/shopimages/jojean/template/work/1147/basket.css?t=202005081215 */
+.MS_tb_delivery .MS_layer_delivery{border:1px solid #747474!important;right:-187px!important;}
+.MS_tb_delivery .MS_layer_delivery ol{border:0!important;}

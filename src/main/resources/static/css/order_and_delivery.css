@@ -1,0 +1,122 @@
+.box {
+    width: 1000px;
+    margin-left: 17%;
+}
+
+.no_margin {
+    margin-right: 17%;
+}
+
+.search_box {
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+.order_lookup {
+    margin-left: 100px;
+    margin-top: 5%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.category {
+    border: 1px solid black;
+    text-align: center;
+}
+.float_left {
+    width: 1010px;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+}
+.view_list{
+    width: 100%;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.tap {
+    float: left;
+}
+
+.post {
+    table-layout: fixed;
+    text-align: center;
+    margin-top: 10px;
+}
+.color_gray {
+    background-color: #e0e0e0;
+}
+.color_lightgray {
+    background-color: #eeeeee;
+}
+.box2 {
+    width: 1000px;
+}
+
+/* --내가 수정한 코드 시작--*/
+table{
+    border-collapse:collapse;
+    width: 100%;
+}
+.order_lookup{
+    position: relative;
+}
+.tb-center{
+    text-align: center;
+}
+.tb-right{
+    text-align: right;
+}
+.tb-left{
+    text-align: left;
+}
+.tit-page{
+    position: relative;
+    padding: 40px 0;
+    font-size: 30px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+#cartWrap{
+    display: block;
+    min-height: 440px;
+    position: relative;
+    width: 1366px;
+    margin: 0 auto;
+}
+
+th{padding:14px 0;font-size:13px;color:#333;font-weight:bold;border-top:1px solid #bbb;border-bottom:1px solid #e9e9e9;}
+
+td{padding:18px 0;font-size:13px; border-bottom:1px solid #e9e9e9;}
+thead tr {
+    background-color: #e0e0e0;
+    border-bottom: 2px solid #808080;
+    border-top: 2px solid #808080;
+}
+.productinfo {
+    background-color: #eeeeee;
+    border-top: 2px solid #c0c0c0;
+    border-bottom: 2px solid #c0c0c0;
+}
+.cartinfo{
+    line-height: 0;
+}
+.positionleft{
+    position: relative;
+    left: 20px;
+}
+.boxheight{
+    height: 25px;
+}

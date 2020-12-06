@@ -1,0 +1,131 @@
+h2,h3,ul,li,th,td,form,fieldset,legend,input,select,textarea{
+    margin:0;
+    padding:0;
+    font-family:'Malgun Gothic', Lato, monospace, Corbel, Dotum, AppleGothic, Helvetica, sans-serif;
+}
+.text_center {
+    text-align: center;
+}
+h2,h3,table,input,select,textarea,a{
+    font-size:12px;
+    line-height:1.25;
+    color:#333;
+    font-family:'Malgun Gothic', Lato, monospace, Corbel, Dotum, AppleGothic, Helvetica, sans-serif;}
+h2,h3{font-weight:normal;}
+img{vertical-align:top;}
+img,fieldset{border:0 none;}
+li{list-style:none;}
+caption,legend{display:none;}
+a{color:#333;text-decoration:none;}
+em{font-style:normal;}
+input,select,textarea,a{vertical-align:middle;}
+input,select{border:1px solid #e0e0e0;}
+input[type=checkbox],input[type=radio]{border:0;}
+select{width:50px;height:32px;line-height:32px;}
+input:focus{outline:none;}
+table{width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;word-wrap:break-word;word-break:keep-all;}
+.MS_input_txt{padding-left:5px;height:30px;line-height:30px;border:1px solid #e0e0e0;}
+.chk-rdo{width:13px;height:13px;vertical-align:middle;}
+.fc-red{color:#111;}
+.mt-10{margin-top:10px;}
+table img{vertical-align:middle;}
+.tb-bold{font-weight:bold;}
+.tb-left,.tb-center,.tb-right{padding:0 10px;}
+.tb-left{text-align:left;}
+.tb-center{text-align:center;}
+.tb-right{text-align:right;}
+.contentWrap-order{position:relative;width:1366px;margin:0 auto;}
+.contentWrap:after{content:"";display:block;clear:both;}
+#content-order{width:100%;position:relative;}
+textarea{width:600px;height:47px;padding:2px;border:1px solid #e9e9e9;}
+#content-order .tit-page{position:relative;padding:40px 0;font-size:30px;text-align:center;color:#000;font-weight:bold;}
+.CSSbutton{display:inline-block;padding:8px 12px;font-size:12px;color:#333;border:1px solid #e0e0e0;background:#fff;-webkit-transition:all 0.3s ease;transition:all 0.3s ease;}
+.CSSbutton:hover{border:1px solid #333;cursor:hand;}
+.CSSbutton:active{position:relative;}
+.CSSbuttonGray{display:inline-block;padding:8px 12px;font-size:12px;color:#fff;border:1px solid #909090;background:#a1a1a1;-webkit-transition:all 0.3s ease;transition:all 0.3s ease;}
+.CSSbuttonGray:hover{color:#333;border:1px solid #333;background:#fff;cursor:hand;}
+.CSSbuttonGray:active{position:relative;}
+.CSSbuttonLog{display:inline-block;width:368px;height:42px;font-size:14px;color:#fff;font-weight:bold;text-align:center;line-height:42px;border:1px solid #333;background:#333;-webkit-transition:all 0.3s ease;transition:all 0.3s ease;}
+.CSSbuttonLog:hover{color:#333;border:1px solid #333;background:#fff;cursor:hand;}
+.CSSbuttonLog:active{position:relative;}
+.CSSbuttonLogW{display:inline-block;width:368px;height:42px;font-size:14px;color:#333;font-weight:bold;text-align:center;line-height:42px;border:1px solid #ddd;background:#fff;-webkit-transition:all 0.3s ease;transition:all 0.3s ease;}
+.CSSbuttonLogW:hover{border:1px solid #333;border:1px solid #333;cursor:hand;}
+.CSSbuttonLogW:active{position:relative;}
+
+/*! CSS Used from: https://www.justone.co.kr/shopimages/jojean/template/work/1147/order_pay.css?t=202001201126 */
+.tit-page{padding-bottom:0!important;}
+#order h3{font-weight:bold;color:#333;margin:70px 0 0 0;position:relative;font-size:16px;}
+#order h3 label{position:absolute;bottom:0;right:0;font-size:12px;font-weight:normal;letter-spacing:0;}
+#order .MS_input_txt{height:32px;line-height:32px;margin:0;padding:0 5px;}
+#order select{height:32px;line-height:32px;border:1px solid #ddd;background:#fff;text-align:center;}
+#order input[type=text]{width:168px;height:32px;line-height:32px;padding:0 5px;border:1px solid #ddd;}
+#order .w60{width:48px!important;}
+#order .w120{width:120px!important;}
+#order .w240{width:240px!important;}
+#order .w280{width:330px!important;}
+#order .bank-type{width:120px!important;}
+.MK_ssgpay_select{width:120px!important;}
+.MS_email{width:120px!important;}
+.MS_tel{width:80px!important;}
+#order .fc-red{color:#f00;}
+#order .txt-l{text-align:left;}
+#order .txt-c{text-align:center;}
+#order .label{display:inline-block;margin:5px 0;}
+#order .btn-darkgray{display:inline-block;height:32px;line-height:31px;width:52px;text-align:center;padding:0 10px;border:1px solid #909090;background:#a1a1a1;color:#fff;}
+#order .btn-white{display:inline-block;height:23px;line-height:25px;padding:0 5px;border:1px solid #ddd;color:#000;font-weight:bold;letter-spacing:-1px;border-radius:3px;}
+#order .table-order{position:relative;margin-top:10px;border-top:1px solid #bbb;}
+#order .table-order{_position:static;}
+#order .table-order th,#order .table-order td{padding:15px;border-bottom:1px solid #e9e9e9;font-size:12px;font-weight:normal;}
+#order .table-order .txt-l,#order .table-order .txt-c{padding:0 15px;}
+#order .table-order thead th{background:#fcfcfc;border-bottom:1px solid #e9e9e9;text-align:center;color:#666;}
+#order .table-order tbody th{text-align:center;border-right:1px solid #eee;color:#666;}
+#order .table-order tbody th span{font-size:12px;font-weight:normal;}
+#order .table-order textarea{width:500px;padding:10px;border:1px solid #ddd;}
+#order .table-order .pay-method li{margin:10px 0;padding-left:6px;}
+#order .table-order .pay-method li em{color:#f00;}
+#order .lst-order{padding:15px;border-bottom:1px solid #ccc;}
+#order .chk-label{display:inline-block;margin:10px 0 0 15px;color:#222;}
+#order .tot-order{margin:0 0 10px 0;border-bottom:1px solid #ccc;}
+#order .tot-order th,#order .tot-order td{padding:25px 0 25px 10px;border:0 none!important;background:#f8f8f8!important;text-align:left!important;}
+#order .tot-order td{color:#777;}
+#order .tot-order td .price{color:#000;font-size:16px;letter-spacing:-1px;}
+#order .tot-order td .price em{color:#f00;font-size:26px;font-weight:700;}
+#order .tot-order .reserve-msg{padding-top:5px;font-size:0.95em;}
+#order .tbl-pay{margin-top:10px;border-top:1px solid #ccc;}
+#order .tbl-pay th,#order .tbl-pay td{padding:10px 0;color:#444;background:#f8f8f8;border-bottom:1px solid #ddd;}
+#order .tbl-pay .txt-c{padding:0 15px;}
+#order .tbl-pay thead th{padding:15px;background:#f3f3f3;border-bottom:1px solid #ccc;font-size:14px;}
+#order .tbl-pay thead td{padding:25px 0 28px;font-size:16px;text-align:center;}
+#order .tbl-pay thead td strong em{position:relative;top:3px;font-size:26px;font-weight:normal;margin-right:3px;}
+#order .tbl-pay thead td .base{z-index:1;position:relative;}
+#order .tbl-pay thead td .base .plus,#order .tbl-pay thead td .base .minus,#order .tbl-pay thead td .base .equal{position:absolute;top:9px;width:23px;height:23px;right:90%;}
+#usereserve,#couponnum{_width:168px;}
+#order .tbl-taxbill{width:100%;border-spacing:0;border-collapse:collapse;}
+#order .tbl-taxbill th{background:#f6f6f6;color:#333;padding:2px 0;}
+#order .tbl-taxbill th,#order .tbl-taxbill td{border:1px solid #dbdbdb;text-align:left;}
+#order .tbl-taxbill th div{padding-left:20px;height:34px;line-height:36px;}
+#order .tbl-taxbill td div{padding-left:10px;margin-top:5px;margin-bottom:5px;}
+#order .tbl-taxbill td{color:#666;margin:0;padding:0 0px;}
+#order .table-order th .final_price{font-size:14px;font-weight:bold;text-align:center;}
+.tit a{line-height:16px!important;margin-top:3px!important;}
+.bg_c{background:#fcfcfc;line-height:18px;font-size:11px!important;}
+/*! CSS Used from: Embedded */
+.tit a{display:inline-block;position:relative;width:15px;_width:17px;height:15px;line-height:21px;_line-height:17px;margin-top:-3px;border:1px solid #545454;color:#fff;background:#666;font-size:12px;text-align:center;vertical-align:middle;}
+.tit a #ocbMsg{display:none;position:absolute;top:30px;left:-24px;width:240px;_width:270px;padding:15px 15px 10px 15px;line-height:18px;border:1px solid #9f9f9f;color:#737373;background:#fff;font-weight:normal;text-align:left;letter-spacing:-1px;}
+.tit a #ocbMsg .arr{display:block;position:absolute;top:-7px;left:24px;width:12px;height:7px;padding:0;margin:0;background:url(https://www.justone.co.kr/images/common/arr_ocb.gif) no-repeat 0 0;}
+.tit a #ocbMsg strong{font-weight:bold;color:#ff737e;}
+/*! CSS Used from: https://www.justone.co.kr/css/okdgg_layer.css */
+caption{display:none;}
+
+#option { 
+    padding-left: 40px;
+    color: #999;
+}
+.widthbox{
+    width: 80px;
+}
+.box{
+    text-align: center;
+}
+.paybutton {margin: 0 auto; text-align:center;margin-top: 50px}
+.tb-center img { width: 50px; height: 50px;}

@@ -1,0 +1,322 @@
+#join_test {
+    width: 550px;
+    margin: 0 auto;
+}
+#join_test .box-wrap {
+    width: 550px;
+    margin: 0 auto;
+}
+#join_test .join-form {
+    border-top: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+}
+#join_test .join-form li {
+    position: relative;
+    height: 49px;
+    line-height: 49px;
+    padding: 0 23px;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    background: #fff;
+    color: #000;
+}
+#join_test .join-form li label {
+    font-size: 14px;
+}
+#join_test .join-msg {
+    display: none;
+}
+#join_test .join-msg li {
+    height: 18px;
+    line-height: 18px;
+    padding-left: 2px;
+    color: #999;
+}
+#join_test .join-msg li label {
+    font-size: 14px;
+    font-weight: bold;
+}
+#join_test .appendMarketing {
+    line-height: 18px;
+    position: relative;
+}
+#join_test .appendMarketing .mk-wrap {
+    height: 58px;
+    line-height: 58px;
+}
+#join_test .appendMarketing .mk-wrap label {
+    font-size: 13px;
+}
+#join_test .input-cbox {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin: 0;
+    margin-top: -3px;
+    *margin-top: 1px;
+    vertical-align: middle;
+    *vertical-align: top;
+}
+input[type=checkbox], input[type=radio], input[type=image] {
+    border: 0;
+}
+#join_test .appendMarketing .mk-wrap label strong {
+    font-weight: normal;
+}
+#join_test .pl-30 {
+    padding-left: 15px;
+}
+.pl-30 {
+    padding-left: 30px;
+}
+.new-privercy-contract {
+    padding: 0;
+}
+#chkwrap {
+    border: 1px solid #dedede;
+    background: #ffffff;
+}
+#chkwrap {
+    display: none;
+    border: 1px solid #dedede;
+}
+#chkwrap .all-chk {
+    height: 43px;
+    line-height: 45px;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    border-bottom: 1px solid #dedede;
+}
+#chkwrap .p10 {
+    padding: 10px;
+}
+#join_test .btn-area {
+    text-align: center;
+}
+
+.new-privercy-contract .privercyBtns {
+    padding: 15px 0;
+    color: #000;
+    text-align: center;
+    line-height: 20px;
+}
+.new-privercy-contract .privercyBtns a {
+    color: #000;
+    text-decoration: underline;
+    line-height: 20px;
+    vertical-align: top;
+}
+.privercyArea .appendPrivercy {
+    display: none;
+}
+.privercyArea textarea {
+    width: 99% !important;
+    height: 165px !important;
+}
+
+#join_test .join-form li.birth {
+    *z-index: 2;
+    line-height: 51px;
+}
+#join_test .join-form li.birth dl dd:first-child {
+    width: 100px;
+    margin-left: 0;
+}
+#join_test .join-form li.birth dl dd {
+    position: relative;
+    float: left;
+    width: 100px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.privercyArea .appendPrivercy .contract-tbl {
+    display: table;
+}
+.new-privercy-contract .contract-tbl {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.privercyArea table {
+    width: 100%;
+}
+.contract-tbl {
+    display: none;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+#join_test .privercy-contract {
+    display: none;
+}
+.privercy-contract {
+    clear: both;
+}
+h4.tit {
+    display: none;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+#join_test .btm-msg {
+    display: none;
+    padding-top: 30px;
+    line-height: 18px;
+}
+#join_test .pl-6 {
+    padding-left: 6px;
+}
+#join_test .join-form li .txt-input {
+    position: absolute;
+    top: 0;
+    left: 23px;
+    width: 300px;
+    height: 49px;
+    line-height: 49px;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #000;
+    border: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+#join_test .join-msg {
+    display: none;
+}
+#join_test .btn-area a:hover {
+    color: #000;
+    background: #fff;
+}
+
+/* 회원가입 수정 */
+.table-order-info {
+    margin-top: 10px;
+    border-top: 1px solid #bbb;
+}
+.table-order-info tbody th {
+    padding: 14px 0;
+    font-size: 12px;
+    color: #666;
+    border-left: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+    background: #fcfcfc;
+}
+.table-order-info tbody td {
+    padding: 10px 0;
+    font-size: 12px;
+    color: #666;
+    border-right: 1px solid #e9e9e9;
+}
+.table-order-info tbody th, .table-order-info tbody td {
+    font-weight: normal;
+    border-bottom: 1px solid #e9e9e9;
+}
+.table-order-info th .tb-left {
+    padding-left: 29px;
+}
+.tb-left {
+    text-align: left;
+}
+.table-order-info td .tb-left {
+    padding-left: 20px;
+}
+.tb-left {
+    text-align: left;
+}
+.tb-left, .tb-center, .tb-right {
+    padding: 0 10px;
+}
+.tb-left, .tb-center, .tb-right {
+    padding: 0 10px;
+}
+.txt-input1, .txt-input2, .MS_input_txt, .MS_input_tel {
+    padding-left: 5px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #e0e0e0;
+}
+#join {
+    width: 800px;
+    margin: 0 auto;
+}
+#join .w200 {
+    width: 160px;
+}
+.CSSbuttonGray {
+    font-weight: bold;
+    display: inline-block;
+    padding: 12px 45px;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #909090;
+    background: #a1a1a1;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.CSSbuttonGray_zip {
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 12px;
+    color: #fff;
+    border: 1px solid #909090;
+    background: #a1a1a1;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.CSSbuttonGray:active {
+    position: relative;
+}
+.CSSbuttonGray:hover {
+    color: #333;
+    border: 1px solid #333;
+    background: #fff;
+    cursor: hand;
+}
+.pl-16 {
+    padding-left: 16px !important;
+}
+#join .MS_radio {
+    margin-left: 10px;
+}
+.zipcode {
+    width: 100px;
+    margin-right: 5px;
+}
+#join .w415 {
+    width: 415px;
+}
+.MS_tel {
+    width: 80px !important;
+}
+#join .MS_input_tel {
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #e0e0e0;
+}
+#join .w80 {
+    width: 80px;
+}
+.MS_email {
+    width: 120px !important;
+}
+#join .btn-area {
+    text-align: center;
+    margin: 50px 0;
+}
+#join .idpw-info {
+    font-size: 11px;
+}
+.btn-area input{
+    margin-top:20px;
+}
+.btn-area a{
+    margin-top:20px;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--<mapper namespace="com.justonemonth.model.TestDAO">-->
+<!--    <insert id="join" parameterType="map" >-->
+<!--		INSERT INTO item_list (up_name, up_category1, up_category2, up_color, up_price, up_size,-->
+<!--		up_file1, up_file2) VALUES-->
+<!--		(#{up_name},  #{up_category1}, #{up_category2}, #{up_color}, #{up_price},-->
+<!--		#{up_size}, #{up_file1}, #{up_file2})-->
+<!--	</insert>-->
+<!--</mapper>-->
+
+<mapper namespace="com.justonemonth.model.TestDAO">
+	<select id="selectTest" resultType="com.justonemonth.model.TestDTO">
+        SELECT * from test
+    </select>
+	<insert id="itemjoin" parameterType="map" >
+			INSERT INTO item_list (up_name, up_category1, up_category2, up_color, up_price, up_size,
+			up_file1,up_file2,up_file3,up_file4,up_file5,up_file6,up_file7,up_file8,up_file9) VALUES
+			(#{up_name},  #{up_category1}, #{up_category2}, #{up_color}, #{up_price},
+			#{up_size}, #{up_file1}, #{up_file2}, #{up_file3}, #{up_file4}, #{up_file5}, #{up_file6}, #{up_file7}, #{up_file8}, #{up_file9})
+		</insert>
+	<select id="selectItems"  resultType="com.justonemonth.model.mainDTO">
+		select up_idx ,up_name,up_category1,up_category2,up_color,up_price,up_size,up_file1 from item_list where up_category1=#{i} ORDER BY up_idx DESC
+	</select>
+	<select id="selectItem"  resultType="com.justonemonth.model.mainDTO" parameterType="com.justonemonth.model.mainDTO">
+		select up_idx ,up_name,up_category1,up_category2,up_color,up_price,up_size,up_file1 from item_list where up_category1=#{i} and up_category2=#{i1} ORDER BY up_idx DESC
+	</select>
+	<select id="selectItemAll"  resultType="com.justonemonth.model.mainDTO">
+		select up_idx ,up_name,up_category1,up_category2,up_color,up_price,up_size,up_file1 from item_list ORDER BY up_idx DESC
+	</select>
+	<select id="itemview"  resultType="com.justonemonth.model.mainDTO">
+		select up_idx ,up_name,up_category1,up_category2,up_color,up_price,up_size,up_file1,up_file2,up_file3,up_file4,up_file5,up_file6,up_file7,up_file8
+		 ,up_file9 from item_list where up_idx=#{up_idx}
+	</select>
+	<select id="review"  resultType="com.justonemonth.model.mainDTO">
+			SELECT re_userid,re_name,re_content,re_regdate,re_itemidx,re_image FROM tb_review WHERE re_itemidx=#{up_idx} ORDER BY re_idx DESC
+	</select>
+	<insert id="reviewjoin" parameterType="map" >
+			INSERT INTO tb_review(re_userid, re_name , re_content, re_itemidx,re_image) VALUES (#{re_userid},#{re_name}, #{re_content}, #{re_itemidx},#{re_image})
+		</insert>
+	<select id="selectItemAllsh"  resultType="com.justonemonth.model.mainDTO" parameterType="map">
+		select up_idx,up_name,up_category1,up_category2,up_color,up_price,up_size,up_file1,up_file2 from item_list
+		<choose>
+			<when test="search != null">
+				WHERE up_name like CONCAT("%",#{search},"%")
+			</when>
+		</choose>
+	</select>
+
+
+
+	<insert id="cartInsert" parameterType="map">
+         INSERT INTO tb_cart (cart_userid, cart_amount, cart_productprice, cart_productname, cart_color, cart_size, cart_productimg)
+         VALUES (#{cart_userid},  #{cart_amount}, #{cart_productprice}, #{cart_productname}, #{cart_color}, #{cart_size},#{cart_productimg})
+     </insert>
+	<select id="cartShow" parameterType="String" resultType="com.justonemonth.model.CartDTO">
+        SELECT cart_idx, cart_userid, cart_amount, cart_productprice, cart_productname, cart_color, cart_size, cart_productimg FROM tb_cart WHERE cart_userid=#{cart_userid}
+    </select>
+	<delete id="deleteItem" parameterType="int">
+        DELETE FROM tb_cart WHERE cart_idx=#{cart_idx}
+    </delete>
+	<update id="cartUpdate" parameterType="map">
+        UPDATE tb_cart SET cart_amount=#{cart_amount} WHERE cart_userid=#{cart_userid} AND cart_productname=#{cart_productname} AND cart_size=#{cart_size}
+    </update>
+</mapper>

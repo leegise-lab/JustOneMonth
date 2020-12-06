@@ -1,0 +1,77 @@
+.box {
+    width: 1000px;
+    margin-left: 17%;
+    margin-top: 70px;
+}
+
+.cancel_cnt {
+    width: 33%;
+    height: 100px;
+    float: left;
+    display: inline-block;
+    border: 1px solid black;
+    border-right: none;
+    margin-bottom: 30px;
+}
+
+.img_frame {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+
+.box_1 {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.box_2 {
+    float: right;
+    margin-right: 130px;
+    margin-top: 5px;
+}
+
+.check-box {
+    margin-left: 5px;
+}
+
+.search_initialization {
+    width: 100%;
+    margin-top: 10px;
+    margin-top: 20px;
+}
+
+.search_btn {
+    width: 80px;
+    height: 30px;
+    background-color: deepskyblue;
+    color: whitesmoke;
+    border: 1px solid deepskyblue;
+    outline: deepskyblue;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.initial_btn {
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    color: deepskyblue;
+    border: 1px solid deepskyblue;
+    outline: deepskyblue;
+    cursor: pointer;
+}
+
+.color_gray {
+    background-color: #ededed;
+}
+
+td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.img {
+     width: 100%;
+    height: 100%;
+}

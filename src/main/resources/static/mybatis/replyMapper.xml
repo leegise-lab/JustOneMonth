@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.justonemonth.model.ReplyDAO">
+    <insert id="inputReply" parameterType="map">
+        insert into tb_reply (article_no, re_content) values (#{articleNo}, #{reContent})
+    </insert>
+
+    <select id="replyWatch" resultType="String" parameterType="int">
+--  result = re_content // parameter re_idx
+        SELECT re_content FROM tb_reply where article_no = #{idx}
+    </select>
+
+    <update id="replyAnswer" parameterType="int">
+        update tb_board set answer_yn = 'Y' where idx = #{idxId}
+    </update>
+</mapper>

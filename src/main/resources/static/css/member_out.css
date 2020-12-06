@@ -1,0 +1,124 @@
+.box {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.margin_auto {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.CSSbuttonOut {
+    display: inline-block;
+    width: 368px;
+    height: 42px;
+    color: #fff;
+    text-align: center;
+    line-height: 42px;
+    border: 1px solid #333;
+    background: #333;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.CSSbuttonOut:active {
+    position: relative;
+}
+.CSSbuttonOut:hover {
+    color: #333;
+    border: 1px solid #333;
+    background: #fff;
+    cursor: hand;
+}
+
+
+.out_txt {
+    width: 100%;
+    text-align: center;
+}
+
+.comment {
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    line-height: 150%;
+}
+.comment span{
+    color: red;
+    font-weight: bold;
+}
+.reason_box {
+    width: 500px;
+    height: 30%;
+    margin-top: 10px;
+    border-top: 1px solid lightgray;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+.reason_table1 {
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+.write_box {
+    align-content: center;
+    width: 100%;
+    height: 200px;
+    border: 1px solid lightgray;
+    margin-left: 5px;
+    text-align: start;
+    word-break: break-all;
+}
+td{
+    align-content: center;
+}
+
+.btn_box {
+    width: 50%;
+    height: 50px;
+    text-align: center;
+}
+.out_btn {
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+.cancel_btn {
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+
+.CSSbuttonCancel:active {
+    position: relative;
+}
+.CSSbuttonCancel:hover {
+    color: white;
+    border: 1px solid #333;
+    background: cornflowerblue;
+    cursor: hand;
+}
+
+
+.form-group{
+    margin-top: 10px;
+}
+.font {
+    font-size: x-large;
+!important;
+    font-weight: bold;
+    margin-bottom: 30px;
+}

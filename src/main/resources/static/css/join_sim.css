@@ -1,0 +1,196 @@
+#join_test {
+    width: 550px;
+    margin: 0 auto;
+}
+#join_test .box-wrap {
+    width: 550px;
+    margin: 0 auto;
+}
+#join_test .join-form {
+    border-top: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+}
+#join_test .join-form li {
+    position: relative;
+    height: 49px;
+    line-height: 49px;
+    padding: 0 23px;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    background: #fff;
+    color: #000;
+}
+#join_test .join-form li label {
+    font-size: 14px;
+}
+#join_test .join-form li .txt-input {
+    position: absolute;
+    top: 0;
+    left: 23px;
+    width: 300px;
+    height: 49px;
+    line-height: 49px;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #000;
+    border: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+#join_test .join-form li.birth {
+    *z-index: 2;
+    line-height: 51px;
+}
+#join_test .join-form li.birth dl dd:first-child {
+    width: 100px;
+    margin-left: 0;
+}
+#join_test .join-form li.birth dl dd {
+    position: relative;
+    float: left;
+    width: 100px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#join_test .join-form li.birth:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+#join_test .join-msg {
+    display: none;
+}
+#join_test .join-msg li {
+    height: 18px;
+    line-height: 18px;
+    padding-left: 2px;
+    color: #999;
+}
+#join_test .join-msg li label {
+    font-size: 14px;
+    font-weight: bold;
+}
+#join_test .appendMarketing {
+    line-height: 18px;
+    position: relative;
+}
+#join_test .appendMarketing .mk-wrap {
+    height: 58px;
+    line-height: 58px;
+}
+#join_test .appendMarketing .mk-wrap label {
+    font-size: 13px;
+}
+#join_test .input-cbox {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin: 0;
+    margin-top: -3px;
+    *margin-top: 1px;
+    vertical-align: middle;
+    *vertical-align: top;
+}
+#join_test .appendMarketing .mk-wrap label strong {
+    font-weight: normal;
+}
+#join_test .pl-30 {
+    padding-left: 15px;
+}
+.pl-30 {
+    padding-left: 30px;
+}
+.new-privercy-contract {
+    padding: 0;
+}
+#chkwrap {
+    border: 1px solid #dedede;
+    background: #ffffff;
+}
+#chkwrap {
+    display: none;
+    border: 1px solid #dedede;
+}
+#chkwrap .all-chk {
+    height: 43px;
+    line-height: 45px;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    border-bottom: 1px solid #dedede;
+}
+#chkwrap .p10 {
+    padding: 10px;
+}
+#join_test .btn-area {
+    text-align: center;
+}
+#join_test .btn-area a {
+    padding: 21px 0;
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid #585858;
+    background: #585858;
+}
+.new-privercy-contract .privercyBtns {
+    padding: 15px 0;
+    color: #000;
+    text-align: center;
+    line-height: 20px;
+}
+.new-privercy-contract .privercyBtns a {
+    color: #000;
+    text-decoration: underline;
+    line-height: 20px;
+    vertical-align: top;
+}
+.privercyArea .appendPrivercy {
+    display: none;
+}
+.privercyArea textarea {
+    width: 99% !important;
+    height: 165px !important;
+}
+.privercyArea .appendPrivercy .contract-tbl {
+    display: table;
+}
+.new-privercy-contract .contract-tbl {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.privercyArea table {
+    width: 100%;
+}
+.contract-tbl {
+    display: none;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+#join_test .privercy-contract {
+    display: none;
+}
+.privercy-contract {
+    clear: both;
+}
+h4.tit {
+    display: none;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+#join_test .btm-msg {
+    display: none;
+    padding-top: 30px;
+    line-height: 18px;
+}
+#join_test .pl-6 {
+    padding-left: 6px;
+}

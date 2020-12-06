@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.justonemonth.model.OrderDAO">
+    <select id="getUserInfo" parameterType="String" resultType="com.justonemonth.model.OrderDTO">
+        SELECT mem_userid, mem_name, mem_email, mem_hp, mem_zipcode, mem_address1, mem_address2
+        FROM tb_member where mem_userid = #{mem_userid}
+    </select>
+    <insert id="insert" parameterType="map">
+        insert into mem_name (mem_userid) values (#{mem_userid})
+    </insert>
+    <insert id="insertOrderInfo" parameterType="com.justonemonth.model.InsertPayInfoDTO">
+        INSERT INTO tb_order (delivery_num, order_num, order_id, order_name, order_mail,
+        order_hp, order_address, pay_type, pay_price, product_name, pay_finish) VALUES
+
+        (#{deliveryNum}, #{orderNum}, #{orderId}, #{orderName}, #{orderMail},
+         #{orderHp}, #{orderAddress}, #{payType}, #{payPrice}, #{productName},
+         #{payFinish});
+    </insert>
+    <select id="selectOrderInfo" parameterType="String" resultType="com.justonemonth.model.SelectOrderDTO">
+        SELECT product_name, pay_price, pay_finish, order_num, delivery_finish, pay_date  from tb_order where order_id = #{id}
+        ORDER BY pay_date DESC;
+    </select>
+    <select id="selectOrderDetailInfo" parameterType="map" resultType="com.justonemonth.model.SelectOrderDetailDTO">
+        SELECT order_num, order_name, pay_finish, delivery_num, order_hp, order_address, pay_type, pay_price, pay_date
+        FROM tb_order WHERE order_id = #{id} and order_num = #{orderNum}
+    </select>
+    <select id="setCartInfo" parameterType="String" resultType="com.justonemonth.model.SetCartInfoDTO">
+        SELECT cart_amount, cart_productprice, cart_productname, cart_productimg, cart_ordernum, cart_color, cart_size, cart_userid
+        FROM tb_cart WHERE cart_userid = #{id};
+    </select>
+    <select id="setCartDetailInfo" parameterType="map" resultType="com.justonemonth.model.SetCartInfoDTO">
+        SELECT cart_amount, cart_productprice, cart_productname, cart_productimg, cart_ordernum, cart_color, cart_size, cart_userid
+        FROM tb_cart WHERE cart_userid = #{id} and cart_ordernum = #{orderNum};
+    </select>
+    <update id="updateUserBuy" parameterType="map">
+        update tb_cart set cart_ordernum = #{orderNum} where cart_amount = #{amount}
+        and cart_productname = #{productName} and cart_userid = #{userId} and cart_color = #{color};
+    </update>
+    <insert id="insertBuyInfoToCart" parameterType="map">
+        INSERT INTO tb_cart (cart_amount, cart_deliveryprice, cart_productprice, cart_productname, cart_productimg, cart_ordernum, cart_color, cart_size, cart_userid)
+        VALUES (#{amount},2500,#{price},#{productName},#{img},#{orderNum},#{color},#{size},#{id});
+    </insert>
+    <delete id="deleteCartAll" parameterType="String">
+        DELETE FROM tb_cart WHERE cart_userid=#{id}
+    </delete>
+</mapper>
