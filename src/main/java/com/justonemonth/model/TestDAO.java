@@ -18,7 +18,6 @@ public interface TestDAO {
     List<mainDTO> itemview(int up_idx);
     List<mainDTO> review(int up_idx);
     List<mainDTO> selectItemAllsh(HashMap<String, String> dataMap);
-    //준호씨
     int cartInsert(HashMap dataMap);
     List<CartDTO> cartShow(String userid);
     int deleteItem(int i);
