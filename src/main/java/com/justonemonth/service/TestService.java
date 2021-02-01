@@ -55,18 +55,15 @@ public class TestService {
         return mapper.review(up_idx);
     }
 
-    // 정후ㅈㅎ
     public List<mainDTO> selectItemAllsh(HashMap<String, String> dataMap) {
         return mapper.selectItemAllsh(dataMap);
     }
 
-    //준호씨
     public int join(HashMap dataMap ) {
         return mapper.cartInsert(dataMap);
     }
 
     public List<CartDTO> cartshow1(String userid){
-
         return mapper.cartShow(userid);
     }
 
@@ -76,7 +73,6 @@ public class TestService {
     public int cartUpdate(HashMap dataMap) {
         return mapper.cartUpdate(dataMap);
     }
-
 }
 
 
